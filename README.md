@@ -21,9 +21,29 @@ This project uses a generative AI (you!) to create detailed articles for each po
 - `article_generation_prompt.md`: A template for creating a full article for a methodology point.
 - `example_explanation_prompt.md`: A template for creating a detailed sub-article for a specific example within an article.
 
-### Usage
+### Usage (Slash Commands)
 
-To generate content, use the following instructions in your prompts.
+The most efficient way to generate content is using the following agent workflows.
+
+#### To Generate a Main Article:
+
+Use the `/generate-article` command followed by the section reference.
+
+> `/generate-article 1.2.1`
+
+This will automatically read the requirements and create the article in the `techniques/` folder.
+
+#### To Generate an Example Explanation:
+
+Use the `/generate-example` command followed by the example reference ID.
+
+> `/generate-example 1.2.1.E1`
+
+This will create a detailed deep-dive for that specific example in the `techniques/examples/` folder.
+
+### Manual Usage
+
+If you prefer to trigger generation manually, use the following prompt structures.
 
 #### To Generate a Main Article:
 
@@ -31,17 +51,11 @@ Use the following prompt structure, replacing `X.Y.Z` with the desired section n
 
 > "Using `article_generation_prompt.md`, write the article for section `X.Y.Z` from `methodology.md`."
 
-**Example:**
-> "Using `article_generation_prompt.md`, write the article for section `3.1.1` from `methodology.md`."
-
 #### To Generate an Example Explanation:
 
-After an article is generated, its examples will have reference IDs (e.g., `3.1.1.E1`). To create a detailed sub-article for a specific example, use the following prompt structure.
+Use the following prompt structure, replacing `X.Y.Z.E1` with the desired example ID.
 
 > "Using `example_explanation_prompt.md`, write the sub-article for example `X.Y.Z.E1`."
-
-**Example:**
-> "Using `example_explanation_prompt.md`, write the sub-article for example `3.1.1.E1`."
 
 ## Contributing
 
