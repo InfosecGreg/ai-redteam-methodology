@@ -25,21 +25,29 @@ This project uses a generative AI (you!) to create detailed articles for each po
 
 The most efficient way to generate content is using the following agent workflows.
 
+#### To Generate a Phase Overview:
+
+Use the `/generate-phase` command followed by the phase reference.
+
+> `/generate-phase Phase 1`
+
+#### To Generate a Section Overview:
+
+Use the `/generate-section` command followed by the section reference.
+
+> `/generate-section 1.1`
+
 #### To Generate a Main Article:
 
-Use the `/generate-article` command followed by the section reference.
+Use the `/generate-article` command followed by the technique reference.
 
 > `/generate-article 1.2.1`
-
-This will automatically read the requirements and create the article in the `techniques/` folder.
 
 #### To Generate an Example Explanation:
 
 Use the `/generate-example` command followed by the example reference ID.
 
 > `/generate-example 1.2.1.E1`
-
-This will create a detailed deep-dive for that specific example in the `techniques/examples/` folder.
 
 ### Manual Usage
 
