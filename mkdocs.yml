@@ -1,0 +1,103 @@
+site_name: AI Red Teaming Methodology
+site_description: A comprehensive guide for agentic and human-led AI Red Teaming.
+theme:
+  name: material
+  palette:
+    scheme: slate # Dark mode by default for that "Red Team" feel
+    primary: red
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Phase 1: Reconnaissance & Scoping:
+      - Overview: techniques/Phase_1_overview.md
+      - 1.1 Defining Test Objectives & Scope: techniques/1.1_defining_test_objectives_and_scope.md
+      - 1.1.1 Identifying Business Risks: techniques/1.1.1_identifying_business_risks.md
+      - 1.1.2 Establishing Rules of Engagement: techniques/1.1.2_establishing_rules_of_engagement.md
+      - 1.2 Model Fingerprinting: techniques/1.2_model_fingerprinting.md
+      - 1.2.1 Identifying Base Model: techniques/1.2.1_identifying_base_model.md
+      - 1.2.2 Deducing Model Size: techniques/1.2.2_deducing_model_size_and_version.md
+      - 1.2.3 Probing for Fine-Tuning: techniques/1.2.3_probing_for_fine_tuning_or_specialization.md
+      - 1.3 System & Architectural Analysis: techniques/1.3_system_and_architectural_analysis.md
+      - 1.3.1 Eliciting System Prompt: techniques/1.3.1_eliciting_system_prompt_and_meta_instructions.md
+      - 1.3.2 Identifying Integrated Systems: techniques/1.3.2_identifying_integrated_systems.md
+      - 1.3.3 Mapping Data Flow: techniques/1.3.3_mapping_application_data_flow.md
+  - Phase 2: Profiling & Boundary Testing:
+      - Overview: techniques/Phase_2_overview.md
+      - 2.1 Personality & Tone Baselining: techniques/2.1_personality_and_tone_baselining.md
+      - 2.1.1 Assessing Default Persona: techniques/2.1.1_assessing_default_persona.md
+      - 2.1.2 Probing Emotional Responses: techniques/2.1.2_probing_for_emotional_and_empathetic_responses.md
+      - 2.2 Instruction Following: techniques/2.2_instruction_following_and_reasoning_fidelity.md
+      - 2.2.1 Testing Multi-Constraint Prompts: techniques/2.2.1_testing_compliance_with_complex_multi_constraint_prompts.md
+      - 2.2.2 Evaluating Reasoning: techniques/2.2.2_evaluating_logical_and_deductive_reasoning_capabilities.md
+      - 2.3 Ethical & Safety Boundary Probing: techniques/2.3_ethical_and_safety_boundary_probing.md
+      - 2.3.1 Testing Ethical Dilemmas: techniques/2.3.1_testing_gray_area_ethical_dilemmas.md
+      - 2.3.2 Identifying Manipulation Thresholds: techniques/2.3.2_identifying_threshold_for_mildly_manipulative_requests.md
+      - 2.4 Refusal Pattern Analysis: techniques/2.4_refusal_pattern_analysis.md
+      - 2.4.1 Soft vs Hard Refusals: techniques/2.4.1_differentiating_between_soft_vs_hard_refusals.md
+      - 2.4.2 Cataloging Justifications: techniques/2.4.2_cataloging_justifications_for_refusals.md
+  - Phase 3: Initial Exploitation:
+      - Overview: techniques/Phase_3_overview.md
+      - 3.1 Persona & Role-Playing Attacks: techniques/3.1_persona_and_role_playing_attacks.md
+      - 3.1.1 Standard Persona Hijacking: techniques/3.1.1_standard_persona_hijacking.md
+      - 3.1.2 Authority Figure Impersonation: techniques/3.1.2_authority_figure_and_expert_impersonation.md
+      - 3.2 Instruction Overriding: techniques/3.2_instruction_overriding_and_prefix_injection.md
+      - 3.2.1 Forcing Response Affirmatives: techniques/3.2.1_forcing_start_of_response_affirmatives.md
+      - 3.2.2 Style Overrides: techniques/3.2.2_ignore_previous_instructions_style_overrides.md
+      - 3.2.3 Payload Splitting: techniques/3.2.3_payload_splitting_and_reconstruction.md
+      - 3.3 Contextual Misdirection: techniques/3.3_contextual_misdirection_and_obfuscation.md
+      - 3.3.1 Character & Encoding Manipulation: techniques/3.3.1_character_and_encoding_manipulation.md
+      - 3.3.2 Fictional Scenario Framing: techniques/3.3.2_fictional_and_hypothetical_scenario_framing.md
+      - 3.4 Known Vulnerability Prompting: techniques/3.4_known_vulnerability_prompting.md
+      - 3.4.1 Adversarial Suffixes: techniques/3.4.1_appending_universal_adversarial_suffixes.md
+      - 3.4.2 Common Syntax Breakers: techniques/3.4.2_using_common_syntax_breakers.md
+      - 3.4.3 Injection Templates: techniques/3.4.3_leveraging_known_prompt_injection_templates.md
+  - Phase 4: Advanced Manipulation:
+      - Overview: techniques/Phase_4_overview.md
+      - 4.1 Iterative Refinement: techniques/4.1_iterative_refinement_and_goal_hijacking.md
+      - 4.1.1 Escalation of Request Severity: techniques/4.1.1_gradual_escalation_of_request_severity.md
+      - 4.1.2 Pivoting Contexts: techniques/4.1.2_pivoting_from_safe_to_unsafe_contexts.md
+      - 4.2 Multi-Turn Deception: techniques/4.2_multi_turn_deception_and_context_poisoning.md
+      - 4.2.1 Long-Context Fatigue: techniques/4.2.1_long_context_fatigue_and_safety_decay.md
+      - 4.2.2 Embedding Malicious Logic: techniques/4.2.2_embedding_malicious_logic_in_user_history.md
+      - 4.3 Chain-of-Thought (CoT) Exploitation: techniques/4.3_chain_of_thought_cot_exploitation.md
+      - 4.3.1 Decomposing Forbidden Tasks: techniques/4.3.1_direct_cot_for_decomposing_forbidden_tasks.md
+      - 4.3.2 Reverse CoT Safety Analysis: techniques/4.3.2_reverse_cot_for_safety_policy_analysis.md
+      - 4.4 Cognitive Hazard & State Manipulation: techniques/4.4_cognitive_hazard_and_state_manipulation_attacks.md
+      - 4.4.1 Gaslighting & Truth-Deterioration: techniques/4.4.1_gaslighting_and_truth_deterioration_probing.md
+      - 4.4.2 Emotional Manipulation: techniques/4.4.2_emotional_manipulation_for_safety_override.md
+  - Phase 5: Post-Exploitation:
+      - Overview: techniques/Phase_5_overview.md
+      - 5.1 Harmful Content Generation: techniques/5.1_harmful_content_generation.md
+      - 5.1.1 Misinformation/Disinformation: techniques/5.1.1_misinformation_and_disinformation_campaigns.md
+      - 5.1.2 Malicious Code Generation: techniques/5.1.2_malicious_code_and_exploit_generation.md
+      - 5.1.3 Phishing/Social Engineering: techniques/5.1.3_phishing_and_social_engineering_content_crafting.md
+      - 5.2 Sensitive Information Elicitation: techniques/5.2_sensitive_information_elicitation.md
+      - 5.2.1 Extracting PII: techniques/5.2.1_extracting_pii_from_training_data_or_context.md
+      - 5.2.2 Deducing Internal Knowledge: techniques/5.2.2_deducing_system_configurations_or_internal_knowledge.md
+      - 5.3 Agentic System Hijacking: techniques/5.3_agentic_system_and_tool_hijacking.md
+      - 5.3.1 Abusing Integrated APIs: techniques/5.3.1_abusing_integrated_apis_and_functions.md
+      - 5.3.2 Exploiting RAG Systems: techniques/5.3.2_exploiting_rag_systems_for_data_exfiltration.md
+      - 5.3.3 Indirect Prompt Injection: techniques/5.3.3_indirect_prompt_injection_via_retrieved_documents.md
+  - Phase 6: Analysis & Remediation:
+      - Overview: techniques/Phase_6_overview.md
+      - 6.1 Vulnerability Cataloging: techniques/6.1_vulnerability_cataloging_and_severity_rating.md
+      - 6.1.1 Mapping to OWASP Top 10: techniques/6.1.1_mapping_vulnerabilities_to_owasp_top_10_for_llms.md
+      - 6.1.2 CVSS-Equivalent Scoring: techniques/6.1.2_assigning_cvss_equivalent_scoring_for_ai_risks.md
+      - 6.2 Exploit Reliability Testing: techniques/6.2_exploit_reliability_and_persistence_testing.md
+      - 6.2.1 Measuring Success Rates: techniques/6.2.1_measuring_success_rates_across_model_iterations.md
+      - 6.2.2 Testing consistency: techniques/6.2.2_testing_one_shot_vs_multi_turn_consistency.md
+      - 6.3 Impact Analysis: techniques/6.3_impact_analysis_and_risk_quantification.md
+      - 6.3.1 Estimating Damage: techniques/6.3.1_estimating_potential_financial_and_reputational_damage.md
+      - 6.3.2 Evaluating Compliance: techniques/6.3.2_evaluating_compliance_and_legal_implications.md
+      - 6.4 Defensive Measures: techniques/6.4_defensive_measures_and_remediation_recommendations.md
+      - 6.4.1 System Prompt Hardening: techniques/6.4.1_system_prompt_hardening.md
+      - 6.4.2 Filtering and Guardrails: techniques/6.4.2_input_output_filtering_and_guardrails.md
+      - 6.4.3 Recommendations for Fine-Tuning: techniques/6.4.3_recommendations_for_model_fine_tuning.md
