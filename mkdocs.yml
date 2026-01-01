@@ -16,7 +16,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Phase 1: Reconnaissance & Scoping:
+  - "Phase 1: Reconnaissance & Scoping":
       - Overview: techniques/Phase_1_overview.md
       - 1.1 Defining Test Objectives & Scope: techniques/1.1_defining_test_objectives_and_scope.md
       - 1.1.1 Identifying Business Risks: techniques/1.1.1_identifying_business_risks.md
@@ -29,7 +29,7 @@ nav:
       - 1.3.1 Eliciting System Prompt: techniques/1.3.1_eliciting_system_prompt_and_meta_instructions.md
       - 1.3.2 Identifying Integrated Systems: techniques/1.3.2_identifying_integrated_systems.md
       - 1.3.3 Mapping Data Flow: techniques/1.3.3_mapping_application_data_flow.md
-  - Phase 2: Profiling & Boundary Testing:
+  - "Phase 2: Profiling & Boundary Testing":
       - Overview: techniques/Phase_2_overview.md
       - 2.1 Personality & Tone Baselining: techniques/2.1_personality_and_tone_baselining.md
       - 2.1.1 Assessing Default Persona: techniques/2.1.1_assessing_default_persona.md
@@ -43,7 +43,7 @@ nav:
       - 2.4 Refusal Pattern Analysis: techniques/2.4_refusal_pattern_analysis.md
       - 2.4.1 Soft vs Hard Refusals: techniques/2.4.1_differentiating_between_soft_vs_hard_refusals.md
       - 2.4.2 Cataloging Justifications: techniques/2.4.2_cataloging_justifications_for_refusals.md
-  - Phase 3: Initial Exploitation:
+  - "Phase 3: Initial Exploitation":
       - Overview: techniques/Phase_3_overview.md
       - 3.1 Persona & Role-Playing Attacks: techniques/3.1_persona_and_role_playing_attacks.md
       - 3.1.1 Standard Persona Hijacking: techniques/3.1.1_standard_persona_hijacking.md
@@ -59,7 +59,7 @@ nav:
       - 3.4.1 Adversarial Suffixes: techniques/3.4.1_appending_universal_adversarial_suffixes.md
       - 3.4.2 Common Syntax Breakers: techniques/3.4.2_using_common_syntax_breakers.md
       - 3.4.3 Injection Templates: techniques/3.4.3_leveraging_known_prompt_injection_templates.md
-  - Phase 4: Advanced Manipulation:
+  - "Phase 4: Advanced Manipulation":
       - Overview: techniques/Phase_4_overview.md
       - 4.1 Iterative Refinement: techniques/4.1_iterative_refinement_and_goal_hijacking.md
       - 4.1.1 Escalation of Request Severity: techniques/4.1.1_gradual_escalation_of_request_severity.md
@@ -73,7 +73,7 @@ nav:
       - 4.4 Cognitive Hazard & State Manipulation: techniques/4.4_cognitive_hazard_and_state_manipulation_attacks.md
       - 4.4.1 Gaslighting & Truth-Deterioration: techniques/4.4.1_gaslighting_and_truth_deterioration_probing.md
       - 4.4.2 Emotional Manipulation: techniques/4.4.2_emotional_manipulation_for_safety_override.md
-  - Phase 5: Post-Exploitation:
+  - "Phase 5: Post-Exploitation":
       - Overview: techniques/Phase_5_overview.md
       - 5.1 Harmful Content Generation: techniques/5.1_harmful_content_generation.md
       - 5.1.1 Misinformation/Disinformation: techniques/5.1.1_misinformation_and_disinformation_campaigns.md
@@ -86,7 +86,7 @@ nav:
       - 5.3.1 Abusing Integrated APIs: techniques/5.3.1_abusing_integrated_apis_and_functions.md
       - 5.3.2 Exploiting RAG Systems: techniques/5.3.2_exploiting_rag_systems_for_data_exfiltration.md
       - 5.3.3 Indirect Prompt Injection: techniques/5.3.3_indirect_prompt_injection_via_retrieved_documents.md
-  - Phase 6: Analysis & Remediation:
+  - "Phase 6: Analysis & Remediation":
       - Overview: techniques/Phase_6_overview.md
       - 6.1 Vulnerability Cataloging: techniques/6.1_vulnerability_cataloging_and_severity_rating.md
       - 6.1.1 Mapping to OWASP Top 10: techniques/6.1.1_mapping_vulnerabilities_to_owasp_top_10_for_llms.md
